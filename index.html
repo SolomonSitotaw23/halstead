@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Halstead Calculator</title>
+  </head>
+  <body>
+    <header>
+      <h1 class="mainhdr">Halstead Calculator</h1>
+      <h2 class="subtitle">
+        This is a tiny tool to help with Halstead calculations.
+      </h2>
+    </header>
+    <main>
+      <div class="inputs">
+        <h1>Inputs</h1>
+        <hr />
+        <div class="inp">
+          <label for="n1">Distinct operators (n1):</label><br />
+          <input type="number" name="n1" id="n1" class="input" /><br />
+        </div>
+        <div class="inp">
+          <label for="Nn1">Total operators (N1):</label><br />
+          <input type="number" name="Nn1" id="Nn1" class="input" /><br />
+        </div>
+        <div class="inp">
+          <label for="n2">Distinct operands (n2):</label><br />
+          <input type="number" name="n2" id="n2" class="input" /><br />
+        </div>
+        <div class="inp">
+          <label for="n1">Total operands (N2):</label><br />
+          <input type="number" name="n1" id="n1" class="input" /><br />
+        </div>
+        <button type="submit" id="submit" class="submit">Calculate</button>
+      </div>
+      <div class="outputs">
+        <h1>Outputs</h1>
+        <hr />
+        <p id="pl">Program Length(N):</p>
+        <p id="voc">Program vocabulary size (n):</p>
+        <p id="vol">Program volume(V)</p>
+        <p id="difficulty">Program difficulty (D)</p>
+        <p id="level">Program level(L)</p>
+        <p id="pl">Program effort(E)</p>
+        <p id="pl">Program Length(N):</p>
+        <p id="pl">Program Length(N):</p>
+      </div>
+    </main>
+  </body>
+  <script src="./main.js"></script>
+</html>

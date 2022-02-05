@@ -8,47 +8,95 @@
     <title>Halstead Calculator</title>
   </head>
   <body>
-    <header>
-      <h1 class="mainhdr">Halstead Calculator</h1>
-      <h2 class="subtitle">
-        This is a tiny tool to help with Halstead calculations.
-      </h2>
-    </header>
-    <main>
-      <div class="inputs">
-        <h1>Inputs</h1>
-        <hr />
-        <div class="inp">
-          <label for="n1">Distinct operators (n1):</label><br />
-          <input type="number" name="n1" id="n1" class="input" /><br />
-        </div>
-        <div class="inp">
-          <label for="Nn1">Total operators (N1):</label><br />
-          <input type="number" name="Nn1" id="Nn1" class="input" /><br />
-        </div>
-        <div class="inp">
-          <label for="n2">Distinct operands (n2):</label><br />
-          <input type="number" name="n2" id="n2" class="input" /><br />
-        </div>
-        <div class="inp">
-          <label for="n1">Total operands (N2):</label><br />
-          <input type="number" name="n1" id="n1" class="input" /><br />
-        </div>
-        <button type="submit" id="submit" class="submit">Calculate</button>
+    <h2>Halstead Calculator</h2>
+    <div class="container" id="container">
+      <div class="form-container sign-up-container">
+        <form action="#">
+          <input
+            type="number"
+            name="Programlength"
+            placeholder="Program Length"
+            id="programLengthAns"
+            disabled="disabled"
+          />
+          <input
+            type="number"
+            placeholder="Program vocabulary size"
+            id="programVocabularyAns"
+            disabled="disabled"
+          />
+          <input
+            type="number"
+            placeholder="Program volume"
+            id="programVolumeAns"
+            disabled="disabled"
+          />
+          <input
+            type="number"
+            placeholder="Program difficulty"
+            id="programDifficulty"
+            disabled="disabled"
+          />
+          <input
+            type="number"
+            placeholder="Program level"
+            id="programLevel"
+            disabled="disabled"
+          />
+          <input
+            type="number"
+            placeholder="Program effort"
+            id="programEffort"
+            disabled="disabled"
+          />
+          <input
+            type="number"
+            placeholder="Programming time"
+            id="programmingTime"
+            disabled="disabled"
+          />
+          <input
+            type="number"
+            placeholder="Program bugs"
+            id="programBugs"
+            disabled="disabled"
+          />
+        </form>
       </div>
-      <div class="outputs">
-        <h1>Outputs</h1>
-        <hr />
-        <p id="pl">Program Length(N):</p>
-        <p id="voc">Program vocabulary size (n):</p>
-        <p id="vol">Program volume(V)</p>
-        <p id="difficulty">Program difficulty (D)</p>
-        <p id="level">Program level(L)</p>
-        <p id="pl">Program effort(E)</p>
-        <p id="pl">Program Length(N):</p>
-        <p id="pl">Program Length(N):</p>
+      <div class="form-container sign-in-container">
+        <form action="#">
+          <h1>Inputs</h1>
+          <input type="number" placeholder="Distinct operators(n1)" id="dn1" />
+          <input type="number" placeholder="Total operators(N1)" id="tn1" />
+          <input type="number" placeholder="Distinct operands (n2):" id="dn2" />
+          <input type="number" placeholder="Total operands (N2):" id="tn2" />
+        </form>
       </div>
-    </main>
+      <div class="overlay-container">
+        <div class="overlay">
+          <div class="overlay-panel overlay-left">
+            <h1>Welcome Back!</h1>
+            <p>
+              To keep connected with us please login with your personal info
+            </p>
+            <button class="ghost" id="goBack">Go Back</button>
+          </div>
+          <div class="overlay-panel overlay-right">
+            <h2>Description</h2>
+            <p>
+               The purpose of designing this tool is to help in
+              determining the complexity of source code based on the operands
+              and operators. By determining the complexity of code, an
+              appropriate amount of time and resources can be allocated for
+              testing and further development. 
+            </p>
+            <button class="ghost" id="calculate">Calculate</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer></footer>
   </body>
   <script src="./main.js"></script>
 </html>

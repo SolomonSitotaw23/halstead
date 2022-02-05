@@ -10,7 +10,7 @@
   <body>
     <h2>Halstead Calculator</h2>
     <div class="container" id="container">
-      <div class="form-container sign-up-container">
+      <div class="form-container results-container">
         <form action="#">
           <input
             type="number"
@@ -63,19 +63,41 @@
           />
         </form>
       </div>
-      <div class="form-container sign-in-container">
+      <div class="form-container input-container">
         <form action="#">
           <h1>Inputs</h1>
-          <input type="number" placeholder="Distinct operators(n1)" id="dn1" />
-          <input type="number" placeholder="Total operators(N1)" id="tn1" />
-          <input type="number" placeholder="Distinct operands (n2):" id="dn2" />
-          <input type="number" placeholder="Total operands (N2):" id="tn2" required="required"/>
+          <input type="number" placeholder="Distinct operators(n1)" id="dn1" min="0"/>
+          <input type="number" placeholder="Total operators(N1)" id="tn1" min="0"/>
+          <input type="number" placeholder="Distinct operands (n2):" id="dn2" min="0"/>
+          <input type="number" placeholder="Total operands (N2):" id="tn2" required="required" min="0"/>
+          <p class="error-msg" id="errorMsg">please fill all the inputs</p>
+
+
           
         </form>
       </div>
+      
       <div class="overlay-container">
+        <nav role="navigation">
+          <div id="menuToggle">
+            <input type="checkbox" class="checkbx"/>
+            <span></span>
+            <span></span>
+            <span></span>
+            <ul id="menu">
+              <a href="#"><li>Solomon Sitotaw <b>1010804</b></li> </a>
+              <a href="#"><li>G/Medhin Demoz <b>1010764</b></li></a>
+              <a href="#"><li>Tsedenya Gebyaw <b>1010779</b></li></a>
+              <a href="#"><li>Natnael Mulu <b>1010893</b></li></a>
+          
+            </ul>
+          </div>
+        </nav>
         <div class="overlay">
+          
           <div class="overlay-panel overlay-left">
+
+            
             <h1>Additional Help</h1>
             <p>
               All input should be in the form of positive integers. Example
@@ -93,6 +115,8 @@
               development.
             </p>
             <button class="ghost" id="calculate">Calculate</button>
+          
+
           </div>
         </div>
       </div>

@@ -34,13 +34,13 @@
           <input
             type="number"
             placeholder="Program difficulty"
-            id="programDifficulty"
+            id="programDifficultyAns"
             disabled="disabled"
           />
           <input
             type="number"
             placeholder="Program level"
-            id="programLevel"
+            id="programLevelAns"
             disabled="disabled"
           />
           <input
@@ -69,26 +69,28 @@
           <input type="number" placeholder="Distinct operators(n1)" id="dn1" />
           <input type="number" placeholder="Total operators(N1)" id="tn1" />
           <input type="number" placeholder="Distinct operands (n2):" id="dn2" />
-          <input type="number" placeholder="Total operands (N2):" id="tn2" />
+          <input type="number" placeholder="Total operands (N2):" id="tn2" required="required"/>
+          
         </form>
       </div>
       <div class="overlay-container">
         <div class="overlay">
           <div class="overlay-panel overlay-left">
-            <h1>Welcome Back!</h1>
+            <h1>Additional Help</h1>
             <p>
-              To keep connected with us please login with your personal info
+              All input should be in the form of positive integers. Example
+              input: 1, 5, 11, 12 Press "Go Back" to calculate again.
             </p>
             <button class="ghost" id="goBack">Go Back</button>
           </div>
           <div class="overlay-panel overlay-right">
             <h2>Description</h2>
             <p>
-               The purpose of designing this tool is to help in
-              determining the complexity of source code based on the operands
-              and operators. By determining the complexity of code, an
-              appropriate amount of time and resources can be allocated for
-              testing and further development. 
+              The purpose of designing this tool is to help in determining the
+              complexity of source code based on the operands and operators. By
+              determining the complexity of code, an appropriate amount of time
+              and resources can be allocated for testing and further
+              development.
             </p>
             <button class="ghost" id="calculate">Calculate</button>
           </div>
